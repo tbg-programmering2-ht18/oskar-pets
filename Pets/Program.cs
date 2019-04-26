@@ -80,7 +80,7 @@ namespace Pets
 
                 string jsonUserPassword = JsonConvert.SerializeObject(userPasswordDict, Formatting.Indented);
                 File.WriteAllText(userFileName, jsonUserPassword);
-            }
+            }//
             else
             {
                 string json = File.ReadAllText(userFileName);
